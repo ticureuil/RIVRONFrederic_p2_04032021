@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang= "eng">
+
+<!-- Head of the website / Link between pages -->
+<head>
+    <title> Reservia </title>
+    <link rel="stylesheet" href="Home.css" />
+</head>
+
+<!-- Main page -->
+<body>
+    <!-- Head of the page (Tittle/Anchors/) -->
+    <header>
+
+    </header>
+
+    <!-- Filters/Searching/"Hebergments"/"Activités" -->
+    <body>
+        
+    </body>
+
+    <!-- "A propos"/"Nos hebergements"/Assistance -->
+    <footer>
+
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
