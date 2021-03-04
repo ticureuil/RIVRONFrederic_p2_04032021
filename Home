@@ -1,27 +1,99 @@
 <!DOCTYPE html>
-<html lang= "eng">
+<html lang= "French">
 
-<!-- Head of the website / Link between pages -->
+<!-- Back / Liens entre les pages -->
 <head>
     <title> Reservia </title>
     <link rel="stylesheet" href="Home.css" />
 </head>
 
-<!-- Main page -->
+<!-- Le site en lui meme -->
 <body>
-    <!-- Head of the page (Tittle/Anchors/) -->
+    <!-- Entete de la page (Titre/Ancres) -->
     <header>
+        <div id="titre">
+            <!-- Logo de l'entreprise -->
+            <div class="logo">
 
+            </div>
+
+            <!-- Encres pour interagire avec les differentes categories sur la page-->
+            <div class="menu">
+                    <div class="hebergments">
+
+                    </div>
+
+                    <div class="activités">
+
+                    </div>
+
+                    <div class="inscrire">
+
+                    </div>
+            </div>
+        </div>
     </header>
 
-    <!-- Filters/Searching/"Hebergments"/"Activités" -->
+    <!-- Recherche/Filtres/"Hebergments à Marseille"/"Les plus populaires"/"Activités à Marseille" -->
     <body>
-        
+        <!-- Recherches -->
+        <div id="recherche">
+            <div class="texte_recherche">
+
+            </div>
+
+            <div class="champ_recherche">
+
+            </div>
+
+            <div class="filtres">
+
+            </div>
+
+        </div>
+
+        <!-- Informations -->
+        <div id="info">
+
+        </div>
+
+        <!-- Box Herbegements à Marseille -->
+        <div id="hebergements">
+
+        </div>
+
+          <!-- Box Les plus populaires -->
+        <div id="populaires">
+
+        </div>
+
+          <!-- Box Activites à Marseille -->
+        <div id="activités">
+
+        </div>
+
+
     </body>
 
-    <!-- "A propos"/"Nos hebergements"/Assistance -->
+    <!-- "A propos"/"Nos hebergements"/"Assistance" -->
     <footer>
+        <div id="footer">
+            <!-- A propos -->
+            <div id="propos">
 
+            </div>
+
+            <!-- Nos hebergements-->
+            <div id="nos_hebergements">
+
+            </div>
+
+            <!-- Assistance -->
+            <div id="assistance">
+
+            </div>
+
+        </div>
     </footer>
 
 
