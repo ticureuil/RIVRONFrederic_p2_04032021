@@ -1,3 +1,14 @@
+
+
+/* General */
+
+body
+{
+    margin: 0px;
+}
+
+
+
 /* Header */
 
 #titre
@@ -14,10 +25,21 @@
     align-content: space-around;
 }
 
+.hebergements , .activités , .inscrire
+{
+    padding: 30px;
+}
+
+.hebergements:hover , .activités:hover , .inscrire:hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    
+ }
+
 .ancres:hover
 {
    color: #0065FC;
-   border-top: 3px solid #0065FC;
    
 }
 

@@ -1,0 +1,157 @@
+body{
+    margin: 0%;
+}
+
+
+
+
+/* Header */
+
+#titre{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    background-color: grey;
+    grid-template-areas: 
+    "logo vide hebergements activités inscrire" ;
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.hebergements
+{
+    grid-area: hebergements;
+        
+}
+
+.activités{
+    grid-area: activités;
+}
+
+.inscrire{
+    grid-area: inscrire;
+}
+
+
+/* Formulaire */
+
+
+
+
+/* Body */
+#body1{
+    display: grid;
+    grid-template-columns: 5px 6fr 2fr 5px;
+    grid-template-rows: 600px;
+    grid-gap: 35px;
+    grid-template-areas: 
+    "vide hebergements populaires";
+    }    
+
+    /* Hebergements à Marseille */
+    #hebergements{
+        grid-area: hebergements;
+        border: solid grey;
+        border-radius: 5%;
+
+        display: grid;
+        grid-template-rows: 1fr 3fr 3fr 1fr;
+        grid-template-columns: 5px repeat(3, 2fr);
+        grid-gap: 15px;
+        grid-template-areas: 
+        "vide titre titre1 titre2"
+        "vide annonce1 annonce2 annonce3"
+        "vide annonce4 annonce5 annonce6"
+        "vide afficher afficher1 afficher2";
+
+    padding: 25px;
+    }
+
+        .hebergements_titre{
+            grid-area: titre;
+        }
+
+        .hebergements_box1{
+            grid-area: annonce1;
+            border: solid red;
+            border-radius: 5%;
+        }
+
+        .hebergements_box2{
+            grid-area: annonce2;
+            border: solid blue;
+            border-radius: 5%;
+        }
+
+        .hebergements_box3{
+            grid-area: annonce3;
+            border: solid black;
+            border-radius: 5%;
+        }
+
+        .hebergements_box4{
+            grid-area: annonce4;
+            border: solid grey;
+            border-radius: 5%;
+        }
+
+        .hebergements_box5{
+            grid-area: annonce5;
+            border: solid orange;
+            border-radius: 5%;
+        }
+
+        .hebergements_box6{
+            grid-area: annonce6;
+            border: solid purple;
+            border-radius: 5%;
+        }
+
+        .hebergements_lien{
+            grid-area: afficher;
+        }
+
+    /* Les plus populaires */
+    #populaires{
+        grid-area: populaires;
+        border: solid grey;
+        border-radius: 5%;
+    }
+
+
+
+    /*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .herbergements_image
+    {
+        width: 200px;
+        height: 100px;
+        border-top-right-radius: 5%;
+        border-top-left-radius: 5%;
+    
+    }
+
+.logo_info
+{
+    width: 2%;
+    height: 1%;
+    padding-top: 0.5%;
+}
