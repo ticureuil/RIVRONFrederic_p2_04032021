@@ -44,16 +44,17 @@ body{
 #body1{
     display: grid;
     grid-template-columns: 5px 6fr 2fr 5px;
-    grid-template-rows: 600px;
+    grid-template-rows: 600px 600px;
     grid-gap: 35px;
     grid-template-areas: 
-    "vide hebergements populaires";
+    "vide hebergements populaires"
+    "vide acti acti1";
     }    
 
     /* Hebergements à Marseille */
     #hebergements{
         grid-area: hebergements;
-        border: solid grey;
+        background-color: #DEEBFF;
         border-radius: 5%;
 
         display: grid;
@@ -116,13 +117,101 @@ body{
     /* Les plus populaires */
     #populaires{
         grid-area: populaires;
-        border: solid grey;
+        background-color: #DEEBFF;
+        border-radius: 5%;
+
+        display: grid;
+        grid-template-columns: 5px 7fr 5px;
+        grid-template-rows: 5px repeat(3, 3fr);
+        grid-gap: 15px;
+        grid-template-areas: 
+        "vide populairetitre"
+        "vide populaire1"
+        "vide populaire2"
+        "vide populaire3";
+    }
+
+        .populairess_titre{
+            grid-area: populairetitre;
+        }
+
+        .populaires_box1{
+            grid-area: populaire1;
+            border: solid red;
+            border-radius: 5%;
+        }
+
+        .populaires_box2{
+            grid-area: populaire2;
+            border: solid blue;
+            border-radius: 5%;
+        }
+
+        .populaires_box3{
+            grid-area: populaire3;
+            border: solid purple;
+            border-radius: 5%;
+        }
+
+
+
+    /* Activités à Marseille */
+
+    #activités{
+        grid-area: acti / span 3;
+        border-radius: 5%;
+
+
+        display: grid;
+        grid-template-columns:5px repeat(4,2fr) 5px;
+        grid-template-rows: 10px 3fr 3fr 10px;
+        grid-gap: 15px;
+        grid-template-areas:
+        "X activitéstitre vide vide vide"
+        "X activités1 activités2 activités3 activités4"
+        "X activités5 activités6 activités7 activités8";
+    }
+
+    .activité_box1{
+        grid-area: activités1 ;
+        grid-row: span 3;
+        border: solid purple;
+        border-radius: 5%;
+    }
+
+    .activité_box2{
+        grid-area: activités2;
+        border: solid purple;
+        border-radius: 5%;
+    }
+
+    .activité_box3{
+        grid-area: activités6;
+        border: solid purple;
+        border-radius: 5%;
+    }
+
+    .activité_box4{
+        grid-area: activités3;
+        grid-row: span 3;
+        border: solid purple;
+        border-radius: 5%;
+    }
+
+    .activité_box5{
+        grid-area: activités4;
+        border: solid purple;
+        border-radius: 5%;
+    }
+
+    .activité_box6{
+        grid-area: activités8;
+        border: solid purple;
         border-radius: 5%;
     }
 
 
 
-    /*  */
 
 
 
@@ -135,7 +224,101 @@ body{
 
 
 
+    /* Footer */
+    #footer{
+        background-color: #DEEBFF ;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-rows: 2fr 2fr 2fr 2fr;
+        grid-template-areas: 
+        "p h a"
+        "f ch ce"
+        "co s n"
+        "d vide vide";
+    }
 
+    .propos{
+        grid-area: p;
+    }
+
+    .f{
+        grid-area: f;
+    }
+
+    .co{
+        grid-area: co;
+    }
+
+    .d{
+        grid-area: d;
+    }
+
+    .nos_hebergements{
+        grid-area: h;
+    }
+
+    .ch{
+        grid-area: ch;
+    }
+
+    .s{
+        grid-area: s;
+    }
+    .assistance{
+        grid-area: a;
+    }
+
+    .ce{
+        grid-area: ce;
+    }
+
+    .n{
+        grid-area: n;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* A modifier */
+
+    .logo_reservia{
+        width: 100px;
+    }
+
+    .populaires_image
+    {
+        width: 200px;
+        height: 50px;
+        border-top-right-radius: 5%;
+        border-top-left-radius: 5%;
+    
+    }
+
+
+    .activité_image
+    {
+        width: 200px;
+        height: 50px;
+        border-top-right-radius: 5%;
+        border-top-left-radius: 5%;
+    
+    }
+
+    .activité_image_span
+    {
+        width: 200px;
+        height: 50px;
+        border-top-right-radius: 5%;
+        border-top-left-radius: 5%;
+    
+    }
 
 
 
@@ -155,3 +338,12 @@ body{
     height: 1%;
     padding-top: 0.5%;
 }
+
+
+a:link, a:active, a:visited, a:hover
+{ 
+    text-decoration:none; 
+    color: black;
+
+
+} 
