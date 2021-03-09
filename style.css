@@ -2,6 +2,11 @@ body{
     margin: 0%;
 }
 
+a:link, a:active, a:visited, a:hover
+{ 
+    text-decoration:none; 
+    color: black;
+} 
 
 
 
@@ -10,40 +15,74 @@ body{
 #titre{
     display: grid;
     grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
-    grid-template-rows: 100px;
-    background-color: grey;
+    grid-template-rows: 80px;
     grid-template-areas: 
     "logo vide hebergements activités inscrire" ;
 }
 
 .logo{
     grid-area: logo;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 15px;
 }
 
-.hebergements
-{
+.hebergements{
     grid-area: hebergements;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid blue 2px;
         
+}
+
+.ancres_hebergements:link, .ancres_hebergements:active , .ancres_hebergements:hover, .ancres_hebergements:visited{
+    
+    color: blue;
 }
 
 .activités{
     grid-area: activités;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activités:hover{
+    border-top: solid blue 2px;
+}
+
+.ancres_activités:hover{
+    color: blue;
 }
 
 .inscrire{
     grid-area: inscrire;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ancres_inscrire:active, .ancres_inscrire:hover, .ancres_inscrire:visited, .ancres_inscrire:link{
+    color: blue; 
 }
 
 
+
 /* Formulaire */
+.filtres{
+    display: flex;
+}
 
-
+#info{
+    display: flex;
+}
 
 
 /* Body */
 #body1{
     display: grid;
-    grid-template-columns: 5px 6fr 2fr 5px;
+    grid-template-columns: 5px 5fr 2fr 5px;
     grid-template-rows: 600px 600px;
     grid-gap: 35px;
     grid-template-areas: 
@@ -76,38 +115,72 @@ body{
 
         .hebergements_box1{
             grid-area: annonce1;
-            border: solid red;
-            border-radius: 5%;
+            border: solid white 6px;
+            background-color: white;
+            border-radius: 10%;
+            width: 270px;
+            margin-bottom: 25px;
         }
 
         .hebergements_box2{
             grid-area: annonce2;
-            border: solid blue;
-            border-radius: 5%;
+            border: solid white 6px;
+            background-color: white;
+            border-radius: 10%;
+            width: 270px;
+            margin-bottom: 25px;
         }
 
         .hebergements_box3{
             grid-area: annonce3;
-            border: solid black;
-            border-radius: 5%;
+            border: solid white 6px;
+            background-color: white;
+            border-radius: 10%;
+            width: 270px;
+            margin-bottom: 25px;
         }
 
         .hebergements_box4{
             grid-area: annonce4;
-            border: solid grey;
-            border-radius: 5%;
+            border: solid white 6px;
+            background-color: white;
+            border-radius: 10%;
+            width: 270px;
+            margin-bottom: 25px;
         }
 
         .hebergements_box5{
             grid-area: annonce5;
-            border: solid orange;
-            border-radius: 5%;
+            border: solid white 6px;
+            background-color: white;
+            border-radius: 10%;
+            width: 270px;
+            margin-bottom: 25px;
         }
 
         .hebergements_box6{
             grid-area: annonce6;
-            border: solid purple;
-            border-radius: 5%;
+            border: solid white 6px;
+            background-color: white;
+            border-radius: 10%;
+            width: 270px;
+            margin-bottom: 25px;
+        }
+
+        .texte_hebergementsbox{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .titre_hebergementbox{
+            margin-left: 10px;
+            margin-bottom: -5px;
+            margin-top: 2px;
+        }
+
+        .tarif_hebergementsbox{
+            margin-left: 10px;
+            
         }
 
         .hebergements_lien{
@@ -323,13 +396,13 @@ body{
 
 
 
-    .herbergements_image
+    .hebergements_image
     {
-        width: 200px;
-        height: 100px;
-        border-top-right-radius: 5%;
-        border-top-left-radius: 5%;
-    
+        width: 270px;
+        height: 130px;
+        border-top-right-radius: 10%;
+        border-top-left-radius: 10%;
+        object-fit: cover;
     }
 
 .logo_info
@@ -339,11 +412,3 @@ body{
     padding-top: 0.5%;
 }
 
-
-a:link, a:active, a:visited, a:hover
-{ 
-    text-decoration:none; 
-    color: black;
-
-
-} 
