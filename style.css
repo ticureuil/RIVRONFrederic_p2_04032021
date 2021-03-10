@@ -14,10 +14,10 @@ a:link, a:active, a:visited, a:hover
 
 #titre{
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 6fr 2fr 1fr;
     grid-template-rows: 80px;
     grid-template-areas: 
-    "logo vide hebergements activités inscrire" ;
+    "logo vide hebergements inscrire" ;
 }
 
 .logo{
@@ -412,3 +412,29 @@ a:link, a:active, a:visited, a:hover
     padding-top: 0.5%;
 }
 
+/* Fais pendant mentorat */
+
+.menu{
+    grid-area: hebergements;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.barre_nav{
+    
+    grid-area: hebergements;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    justify-content: space-between;
+}
+
+.ancres_hebergements{
+    margin-right: 74px;
+    border-top: solid red;
+    min-height: 100px;
+}
