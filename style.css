@@ -1,5 +1,12 @@
+@font-face {
+    font-family: "raleway";
+    src: url("font/Raleway-VariableFont_wght.ttf");
+}   
+
+
 body{
     margin: 0%;
+    font-family: raleway;
 }
 
 a:link, a:active, a:visited, a:hover
@@ -10,12 +17,14 @@ a:link, a:active, a:visited, a:hover
 
 
 
+
 /* Header */
+
 
 #titre{
     display: grid;
     grid-template-columns: 1fr 6fr 2fr 1fr;
-    grid-template-rows: 80px;
+    grid-template-rows: 70px;
     grid-template-areas: 
     "logo vide hebergements inscrire" ;
 }
@@ -27,18 +36,35 @@ a:link, a:active, a:visited, a:hover
     margin-left: 15px;
 }
 
-.hebergements{
+.menu{
     grid-area: hebergements;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    border-top: solid blue 2px;
-        
+    align-items: center;
 }
+
+
+.barre_nav{
+    
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    justify-content: space-between;
+}
+
+.ancres_hebergements{
+    margin-right: 50px;
+    margin-left: -25px;
+}
+
 
 .ancres_hebergements:link, .ancres_hebergements:active , .ancres_hebergements:hover, .ancres_hebergements:visited{
     
     color: blue;
+    border-top: solid blue;
+    padding-top: 23px;
 }
 
 .activités{
@@ -48,13 +74,13 @@ a:link, a:active, a:visited, a:hover
     justify-content: center;
 }
 
-.activités:hover{
-    border-top: solid blue 2px;
-}
-
 .ancres_activités:hover{
     color: blue;
+    border-top: solid blue;
+    padding-top: 28px;
 }
+
+
 
 .inscrire{
     grid-area: inscrire;
@@ -82,8 +108,8 @@ a:link, a:active, a:visited, a:hover
 /* Body */
 #body1{
     display: grid;
-    grid-template-columns: 5px 5fr 2fr 5px;
-    grid-template-rows: 600px 600px;
+    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-rows: 720px 600px;
     grid-gap: 35px;
     grid-template-areas: 
     "vide hebergements populaires"
@@ -93,20 +119,18 @@ a:link, a:active, a:visited, a:hover
     /* Hebergements à Marseille */
     #hebergements{
         grid-area: hebergements;
-        background-color: #DEEBFF;
+        background-color: #F2F2F2;
         border-radius: 5%;
 
         display: grid;
         grid-template-rows: 1fr 3fr 3fr 1fr;
-        grid-template-columns: 5px repeat(3, 2fr);
-        grid-gap: 15px;
+        grid-template-columns: 20px repeat(3, 2fr) 20px;
+        grid-gap: 20px;
         grid-template-areas: 
         "vide titre titre1 titre2"
         "vide annonce1 annonce2 annonce3"
         "vide annonce4 annonce5 annonce6"
         "vide afficher afficher1 afficher2";
-
-    padding: 25px;
     }
 
         .hebergements_titre{
@@ -120,6 +144,7 @@ a:link, a:active, a:visited, a:hover
             border-radius: 10%;
             width: 270px;
             margin-bottom: 25px;
+            max-height: 225px;
         }
 
         .hebergements_box2{
@@ -129,6 +154,7 @@ a:link, a:active, a:visited, a:hover
             border-radius: 10%;
             width: 270px;
             margin-bottom: 25px;
+            max-height: 225px;
         }
 
         .hebergements_box3{
@@ -138,6 +164,7 @@ a:link, a:active, a:visited, a:hover
             border-radius: 10%;
             width: 270px;
             margin-bottom: 25px;
+            max-height: 225px;
         }
 
         .hebergements_box4{
@@ -147,6 +174,7 @@ a:link, a:active, a:visited, a:hover
             border-radius: 10%;
             width: 270px;
             margin-bottom: 25px;
+            max-height: 225px;
         }
 
         .hebergements_box5{
@@ -156,6 +184,7 @@ a:link, a:active, a:visited, a:hover
             border-radius: 10%;
             width: 270px;
             margin-bottom: 25px;
+            max-height: 225px;
         }
 
         .hebergements_box6{
@@ -165,6 +194,16 @@ a:link, a:active, a:visited, a:hover
             border-radius: 10%;
             width: 270px;
             margin-bottom: 25px;
+            max-height: 225px;
+        }
+
+        .hebergements_image
+        {
+            width: 270px;
+            height: 130px;
+            border-top-right-radius: 10%;
+            border-top-left-radius: 10%;
+            object-fit: cover;
         }
 
         .texte_hebergementsbox{
@@ -180,6 +219,8 @@ a:link, a:active, a:visited, a:hover
 
         .tarif_hebergementsbox{
             margin-left: 10px;
+            margin-block-end: 0px;
+            margin-bottom: -5px;
             
         }
 
@@ -190,59 +231,82 @@ a:link, a:active, a:visited, a:hover
     /* Les plus populaires */
     #populaires{
         grid-area: populaires;
-        background-color: #DEEBFF;
+        background-color: #F2F2F2;
         border-radius: 5%;
 
         display: grid;
         grid-template-columns: 5px 7fr 5px;
-        grid-template-rows: 5px repeat(3, 3fr);
+        grid-template-rows: 5px 1fr 3fr 3fr 3fr;
         grid-gap: 15px;
         grid-template-areas: 
+        "X X"
         "vide populairetitre"
         "vide populaire1"
         "vide populaire2"
         "vide populaire3";
     }
 
-        .populairess_titre{
+        .populaires_titre{
             grid-area: populairetitre;
+            display: flex;
+            justify-content: space-between;
         }
 
         .populaires_box1{
             grid-area: populaire1;
-            border: solid red;
-            border-radius: 5%;
+            border: solid white 6px;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+            flex-direction: row;
+            max-height: 135px;
+
         }
 
         .populaires_box2{
             grid-area: populaire2;
-            border: solid blue;
-            border-radius: 5%;
+            border: solid white 6px;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+            flex-direction: row;
+            max-height: 135px;
         }
 
         .populaires_box3{
             grid-area: populaire3;
-            border: solid purple;
-            border-radius: 5%;
+            border: solid white 6px;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+            flex-direction: row;
+            max-height: 135px;
         }
 
+        .populaires_image{
+            width: 160px;
+            height: 135px;
+            border-bottom-left-radius: 10%;
+            border-top-left-radius: 10%;
+            object-fit: cover;
+            padding-right: 15px;
+        }
 
 
     /* Activités à Marseille */
 
     #activités{
-        grid-area: acti / span 3;
-        border-radius: 5%;
-
+        grid-area: acti;
+        grid-column: 2 / span 2;
 
         display: grid;
-        grid-template-columns:5px repeat(4,2fr) 5px;
+        grid-template-columns:repeat(4,2fr);
         grid-template-rows: 10px 3fr 3fr 10px;
         grid-gap: 15px;
         grid-template-areas:
-        "X activitéstitre vide vide vide"
-        "X activités1 activités2 activités3 activités4"
-        "X activités5 activités6 activités7 activités8";
+        "activitéstitre vide vide vide"
+        "activités1 activités2 activités3 activités4"
+        "activités5 activités6 activités7 activités8";
     }
 
     .activité_box1{
@@ -299,7 +363,7 @@ a:link, a:active, a:visited, a:hover
 
     /* Footer */
     #footer{
-        background-color: #DEEBFF ;
+        background-color: #F2F2F2 ;
         display: grid;
         grid-template-columns: 3fr 3fr 3fr;
         grid-template-rows: 2fr 2fr 2fr 2fr;
@@ -365,14 +429,7 @@ a:link, a:active, a:visited, a:hover
         width: 100px;
     }
 
-    .populaires_image
-    {
-        width: 200px;
-        height: 50px;
-        border-top-right-radius: 5%;
-        border-top-left-radius: 5%;
-    
-    }
+
 
 
     .activité_image
@@ -396,14 +453,6 @@ a:link, a:active, a:visited, a:hover
 
 
 
-    .hebergements_image
-    {
-        width: 270px;
-        height: 130px;
-        border-top-right-radius: 10%;
-        border-top-left-radius: 10%;
-        object-fit: cover;
-    }
 
 .logo_info
 {
@@ -412,29 +461,3 @@ a:link, a:active, a:visited, a:hover
     padding-top: 0.5%;
 }
 
-/* Fais pendant mentorat */
-
-.menu{
-    grid-area: hebergements;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.barre_nav{
-    
-    grid-area: hebergements;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-    justify-content: space-between;
-}
-
-.ancres_hebergements{
-    margin-right: 74px;
-    border-top: solid red;
-    min-height: 100px;
-}
