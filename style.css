@@ -27,10 +27,10 @@ h3{
 
 #titre{
     display: grid;
-    grid-template-columns: 1fr 6fr 2fr 1fr;
+    grid-template-columns: 0.5fr 1fr 6fr 3fr 0.5fr;
     grid-template-rows: 70px;
     grid-template-areas: 
-    "logo . hebergements inscrire" ;
+    ". logo . nav .";
 }
 
 .logo{
@@ -40,61 +40,69 @@ h3{
     margin-left: 15px;
 }
 
-.menu{
-    grid-area: hebergements;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+#barre_nav{
+    grid-area: nav;
+
+    display: grid;
 }
 
 
 .barre_nav{
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "heber_nav acti_nav inscri_nav";
+
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-    justify-content: space-between;
+    margin-block-start: 5%;
 }
 
-.ancres_hebergements{
-    margin-right: 50px;
-    margin-left: -25px;
+
+.hebergements{
+    display: flex;
+    justify-content: center;
+    grid-area: heber_nav;
 }
+
+.activités{
+    display: flex;
+    justify-content: center;
+    grid-area: acti_nav;
+}
+
+.inscrire{
+    grid-area: inscri_nav;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
 
 
 .ancres_hebergements:link, .ancres_hebergements:active , .ancres_hebergements:hover, .ancres_hebergements:visited{
     
     color: blue;
     border-top: solid blue;
-    padding-top: 23px;
+    padding-top: 22px;
 }
 
-.activités{
-    grid-area: activités;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .ancres_activités:hover{
     color: blue;
     border-top: solid blue;
-    padding-top: 28px;
+    padding-top: 22px;
 }
 
-
-
-.inscrire{
-    grid-area: inscrire;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .ancres_inscrire:active, .ancres_inscrire:hover, .ancres_inscrire:visited, .ancres_inscrire:link{
     color: blue; 
+}
+.ancres_inscrire:hover{
+    color: blue;
+    border-top: solid blue;
+    padding-top: 22px;
 }
 
 
