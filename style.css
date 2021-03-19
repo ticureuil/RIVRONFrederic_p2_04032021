@@ -114,6 +114,14 @@ h3{
 
 #info{
     display: flex;
+    flex-direction: row;
+}
+
+.info_icon{
+    width: 30px;
+    color: blue;
+    border: solid blue 2px;
+    border-radius: 100%;
 }
 
 
@@ -238,6 +246,18 @@ h3{
 
         .hebergements_lien{
             grid-area: afficher;
+        }
+
+        .note{
+            display: flex;
+        }
+
+        .note_bleu{
+            color: blue;
+        }
+
+        .note_gris{
+            color: grey;
         }
 
     /* Les plus populaires */
