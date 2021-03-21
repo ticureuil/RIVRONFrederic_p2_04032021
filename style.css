@@ -28,7 +28,6 @@ h3{
 #titre{
     display: grid;
     grid-template-columns: 0.5fr 1fr 6fr 3fr 0.5fr;
-    grid-template-rows: 70px;
     grid-template-areas: 
     ". logo . nav .";
 }
@@ -111,7 +110,6 @@ h3{
 #body1{
     display: grid;
     grid-template-columns: 0.5fr 6fr 3fr 0.5fr;;
-    grid-template-rows:300px 720px 600px;
     grid-gap: 35px;
     grid-template-areas:
     ". recherche recherche1 ." 
@@ -169,13 +167,15 @@ h3{
 
             border: solid red 3px;
             border-radius: 40px;
-            padding-left: 15px;
+            
         }
 
         
             .logo_filtre_eco{
                 grid-area: logo_eco;
-                align-self: center;
+                width: 45px;
+                height: 45px;
+                border-radius: 20px;
                 background-color: lightblue;
                 
                 
@@ -197,12 +197,15 @@ h3{
 
             border: solid blue 3px;
             border-radius: 40px;
-            padding-left: 15px;
+            
         }
 
             .logo_filtre_fami{
                 grid-area: logo_fami;
-                align-self: center;
+                width: 45px;
+                height: 45px;
+                border-radius: 20px;
+                background-color: lightblue;
             }
 
             .texte_filtre_fami{
@@ -220,12 +223,15 @@ h3{
 
             border: solid purple 3px;
             border-radius: 40px;
-            padding-left: 15px;
+            
         }
 
             .logo_filtre_rom{
                 grid-area: logo_rom;
-                align-self: center;
+                width: 45px;
+                height: 45px;
+                border-radius: 20px;
+                background-color: lightblue;
             }
 
             .texte_filtre_rom{
@@ -243,12 +249,15 @@ h3{
 
             border: solid green 3px;
             border-radius: 40px;
-            padding-left: 15px;
+            
         }
 
             .logo_filtre_ani{
                 grid-area: logo_ani;
-                align-self: center;
+                width: 45px;
+                height: 45px;
+                border-radius: 20px;
+                background-color: lightblue;
             }
 
             .texte_filtre_ani{
@@ -257,11 +266,11 @@ h3{
             }
 
 
-        .fas{
+        .logo_filtre_eco, .logo_filtre_fami, .logo_filtre_rom, .logo_filtre_ani{
             align-self: center;
             color: blue;
             background-color: lightblue;
-            width: ;
+            
         }
 
 
@@ -311,7 +320,7 @@ h3{
             grid-area: annonce1;
             border: solid white 6px;
             background-color: white;
-            border-radius: 10%;
+            border-radius: 25px;
             width: 270px;
             margin-bottom: 25px;
             max-height: 225px;
@@ -321,7 +330,7 @@ h3{
             grid-area: annonce2;
             border: solid white 6px;
             background-color: white;
-            border-radius: 10%;
+            border-radius: 25px;
             width: 270px;
             margin-bottom: 25px;
             max-height: 225px;
@@ -331,7 +340,7 @@ h3{
             grid-area: annonce3;
             border: solid white 6px;
             background-color: white;
-            border-radius: 10%;
+            border-radius: 25px;
             width: 270px;
             margin-bottom: 25px;
             max-height: 225px;
@@ -341,7 +350,7 @@ h3{
             grid-area: annonce4;
             border: solid white 6px;
             background-color: white;
-            border-radius: 10%;
+            border-radius: 25px;
             width: 270px;
             margin-bottom: 25px;
             max-height: 225px;
@@ -351,7 +360,7 @@ h3{
             grid-area: annonce5;
             border: solid white 6px;
             background-color: white;
-            border-radius: 10%;
+            border-radius: 25px;
             width: 270px;
             margin-bottom: 25px;
             max-height: 225px;
@@ -361,7 +370,7 @@ h3{
             grid-area: annonce6;
             border: solid white 6px;
             background-color: white;
-            border-radius: 10%;
+            border-radius: 25px;
             width: 270px;
             margin-bottom: 25px;
             max-height: 225px;
@@ -371,8 +380,8 @@ h3{
         {
             width: 270px;
             height: 130px;
-            border-top-right-radius: 10%;
-            border-top-left-radius: 10%;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
             object-fit: cover;
         }
 
@@ -383,14 +392,14 @@ h3{
 
         .titre_hebergementbox{
             margin-left: 10px;
-            margin-bottom: -5px;
-            margin-top: 2px;
+            margin-block-end: 0em;
+            margin-block-start: 5px;
         }
 
         .tarif_hebergementsbox{
             margin-left: 10px;
             margin-block-end: 0px;
-            margin-bottom: -5px;
+            margin-block-start: 5px;
             
         }
 
@@ -400,6 +409,9 @@ h3{
 
         .note{
             display: flex;
+            margin-left: 10px;
+            margin-block-end: 0px;
+            margin-block-start: 5px;
         }
 
         .note_bleu{
@@ -432,13 +444,14 @@ h3{
             grid-area: populairetitre;
             display: flex;
             justify-content: space-between;
+
         }
 
         .populaires_box1{
             grid-area: populaire1;
             border: solid white 6px;
             background-color: white;
-            border-radius: 10%;
+            border-radius: 25px;
             display: flex;
             flex-direction: row;
             max-height: 135px;
@@ -449,7 +462,7 @@ h3{
             grid-area: populaire2;
             border: solid white 6px;
             background-color: white;
-            border-radius: 10%;
+            border-radius: 25px;
             display: flex;
             flex-direction: row;
             max-height: 135px;
@@ -459,7 +472,7 @@ h3{
             grid-area: populaire3;
             border: solid white 6px;
             background-color: white;
-            border-radius: 10%;
+            border-radius: 25px;
             display: flex;
             flex-direction: row;
             max-height: 135px;
@@ -468,12 +481,26 @@ h3{
         .populaires_image{
             width: 160px;
             height: 135px;
-            border-bottom-left-radius: 10%;
-            border-top-left-radius: 10%;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
             object-fit: cover;
             padding-right: 15px;
         }
 
+        .populaires_box_titre{
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .note_populaire{
+            display: flex;
+            flex-direction: row;
+            
+            margin-block-end: 0px;
+            margin-block-start: 5px;
+        }
 
     /* Activités à Marseille */
 
