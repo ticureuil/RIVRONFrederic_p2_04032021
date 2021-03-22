@@ -109,7 +109,7 @@ h3{
 /* Body */
 #body1{
     display: grid;
-    grid-template-columns: 0.5fr 6fr 3fr 0.5fr;;
+    grid-template-columns: 0.5fr 6fr 2fr 0.5fr;;
     grid-gap: 35px;
     grid-template-areas:
     ". recherche recherche1 ." 
@@ -145,7 +145,7 @@ h3{
         grid-area: filtres_recherche;
 
         display: grid;
-        grid-template-columns: 0.5fr 0.9fr 0.7fr 1fr 1.2fr 3fr;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 1.2fr 3fr;
         grid-template-rows: 1fr;
         grid-gap: 20px;        
         grid-template-areas: 
@@ -154,7 +154,8 @@ h3{
 
         .filtres_titre{
             grid-area: txt;
-            align-self: center;
+            display: flex;
+            justify-content: center;
         }
 
         #economique{
@@ -165,7 +166,7 @@ h3{
             grid-template-areas: 
             "logo_eco txt_eco";
 
-            border: solid red 3px;
+            border: solid lightgrey 2px;
             border-radius: 40px;
             
         }
@@ -173,17 +174,22 @@ h3{
         
             .logo_filtre_eco{
                 grid-area: logo_eco;
-                width: 45px;
-                height: 45px;
-                border-radius: 20px;
+                width: 50px;
+                height: 50px;
+                border-radius: 55px;
                 background-color: lightblue;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 
                 
             }
 
             .texte_filtre_eco{
                 grid-area: txt_eco;    
-                align-self: center;      
+                display: flex;
+                justify-content: center;     
                          
             }
 
@@ -195,22 +201,27 @@ h3{
             grid-template-areas: 
             "logo_fami txt_fami";
 
-            border: solid blue 3px;
+            border: solid lightgrey 2px;
             border-radius: 40px;
             
         }
 
             .logo_filtre_fami{
                 grid-area: logo_fami;
-                width: 45px;
-                height: 45px;
-                border-radius: 20px;
+                width: 50px;
+                height: 50px;
+                border-radius: 55px;
                 background-color: lightblue;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             .texte_filtre_fami{
                 grid-area: txt_fami;
-                align-self: center;
+                display: flex;
+                justify-content: center;
             }
 
         #romantique{
@@ -221,22 +232,27 @@ h3{
             grid-template-areas: 
             "logo_rom txt_rom";
 
-            border: solid purple 3px;
+            border: solid lightgrey 2px;
             border-radius: 40px;
             
         }
 
             .logo_filtre_rom{
                 grid-area: logo_rom;
-                width: 45px;
-                height: 45px;
-                border-radius: 20px;
+                width: 50px;
+                height: 50px;
+                border-radius: 55px;
                 background-color: lightblue;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             .texte_filtre_rom{
                 grid-area: txt_rom;
-                align-self: center;
+                display: flex;
+                justify-content: center;
             }
 
         #animaux{
@@ -247,22 +263,27 @@ h3{
             grid-template-areas: 
             "logo_ani txt_ani";
 
-            border: solid green 3px;
+            border: solid lightgrey 2px;
             border-radius: 40px;
             
         }
 
             .logo_filtre_ani{
                 grid-area: logo_ani;
-                width: 45px;
-                height: 45px;
-                border-radius: 20px;
+                width: 50px;
+                height: 50px;
+                border-radius: 55px;
                 background-color: lightblue;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             .texte_filtre_ani{
                 grid-area: txt_ani;
-                align-self: center;
+                display: flex;
+                justify-content: center;
             }
 
 
@@ -285,21 +306,36 @@ h3{
     #info{
         grid-area: info_recherche;
         display: flex;
+        align-items: center;
         
     }
 
+    
     .info_icon{
         width: 30px;
+        height: 30px;
         color: blue;
-        border: solid blue 2px;
+        border: solid lightgrey 2px;
         border-radius: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texte_info{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 15px;
+        margin-inline-end: 0px;
     }
 
     /* Hebergements à Marseille */
     #hebergements{
         grid-area: hebergements;
         background-color: #F2F2F2;
-        border-radius: 5%;
+        border-radius: 30px;
+
 
         display: grid;
         grid-template-rows: 1fr 3fr 3fr 1fr;
@@ -426,7 +462,8 @@ h3{
     #populaires{
         grid-area: populaires;
         background-color: #F2F2F2;
-        border-radius: 5%;
+        border-radius: 30px;
+
 
         display: grid;
         grid-template-columns: 5px 7fr 5px;
@@ -488,10 +525,10 @@ h3{
         }
 
         .populaires_box_titre{
-            margin-block-start: 1em;
             margin-block-end: 1em;
             margin-inline-start: 0px;
             margin-inline-end: 0px;
+            margin-block-start: 0em;
         }
 
         .note_populaire{
@@ -510,9 +547,10 @@ h3{
 
         display: grid;
         grid-template-columns:repeat(4,2fr);
-        grid-template-rows: 10px 3fr 3fr 10px;
+        grid-template-rows: 10px 1fr 3fr 3fr;
         grid-gap: 40px;
         grid-template-areas:
+        ". . . ."
         "activitéstitre . . ."
         "activités1 activités2 activités3 activités4"
         "activités5 activités6 activités7 activités8";
@@ -520,52 +558,52 @@ h3{
 
         .activité_box1{
             grid-area: activités1 ;
-            grid-row: 2 / span 2;
-            border-radius: 8%;
+            grid-row: 3 / span 2;
+            border-radius: 35px;
             box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
-            margin-bottom: 25px;
+            margin-bottom: 60px;
         }
 
         .activité_box2{
             grid-area: activités2;
-            border-radius: 8%;
+            border-radius: 35px;
             box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
         }
 
         .activité_box3{
             grid-area: activités6;
-            border-radius: 8%;
+            border-radius: 35px;
             box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
-            margin-bottom: 25px;
+            margin-bottom: 60px;
         }
 
         .activité_box4{
             grid-area: activités3;
-            grid-row: 2 / span 2;
-            border-radius: 8%;
+            grid-row: 3 / span 2;
+            border-radius: 35px;
             box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
-            margin-bottom: 25px;
+            margin-bottom: 60px;
         }
 
         .activité_box5{
             grid-area: activités4;
-            border-radius: 8%;
+            border-radius: 35px;
             box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
         }
 
         .activité_box6{
             grid-area: activités8;
-            border-radius: 8%;
+            border-radius: 35px;
             box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
-            margin-bottom: 25px;
+            margin-bottom: 60px;
         }
 
         .activité_image
         {
             width: 100%;
             height: 130px;
-            border-top-right-radius: 10%;
-            border-top-left-radius: 10%;
+            border-top-right-radius: 35px;
+            border-top-left-radius: 35px;
             object-fit: cover;
         }
 
@@ -573,8 +611,8 @@ h3{
         {
             width: 100%;
             height: 200px;
-            border-top-right-radius: 10%;
-            border-top-left-radius: 10%;
+            border-top-right-radius: 35px;
+            border-top-left-radius: 35px;
             object-fit: cover;
         }
 
@@ -582,8 +620,8 @@ h3{
         {
             width: 100%;
             height: 200px;
-            border-top-right-radius: 10%;
-            border-top-left-radius: 10%;
+            border-top-right-radius: 35px;
+            border-top-left-radius: 35px;
             object-fit: cover;
         }
 
@@ -592,8 +630,8 @@ h3{
         {
             width: 100%;
             height: 430px;
-            border-top-right-radius: 9%;
-            border-top-left-radius: 10%;
+            border-top-right-radius: 35px;
+            border-top-left-radius: 35px;
             object-fit: cover;
         }
 
