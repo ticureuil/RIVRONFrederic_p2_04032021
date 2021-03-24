@@ -20,17 +20,17 @@ h3{
 }
 
 
-
-
 /* Header */
 
 
 #titre{
     display: grid;
-    grid-template-columns: 0.5fr 1fr 6fr 3fr 0.5fr;
+    grid-template-columns: 0.7fr 1fr 6fr 3fr 0.5fr;
     grid-template-areas: 
     ". logo . nav .";
 }
+
+
 
 .logo{
     grid-area: logo;
@@ -38,6 +38,9 @@ h3{
     align-items: flex-end;
     margin-left: 15px;
 }
+    .logo_reservia{
+        width: 100px;
+    }
 
 #barre_nav{
     grid-area: nav;
@@ -137,15 +140,58 @@ h3{
         grid-area: titre_recherche; 
     }
 
+    .texte_recherche2{
+        margin-block-start: -1em;
+    }
+
+
+
     .champ_recherche{
         grid-area: insert_recherche;
     }
+
+        .recherche_box{
+            display: flex;
+
+        }
+
+            .recherche_icon{
+                display: flex;
+                
+                align-items: center;
+                justify-content: center;
+                font-size: 15px;
+                border: solid grey 0.5px;
+                width: 40px;
+                height: 40px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                background-color: grey;
+
+            }
+
+
+            .recherche_input{
+                border: solid grey 0.5px;
+            }
+
+
+            .recherche_bouton{
+                border: none;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                height: 42px;
+                font-size: 16px;
+                color: white;
+                background-color: blue;
+            }
+
 
     .filtres{
         grid-area: filtres_recherche;
 
         display: grid;
-        grid-template-columns: 0.5fr 1fr 1fr 1fr 1.2fr 3fr;
+        grid-template-columns: 0.3fr 1fr 0.7fr 0.8fr 1fr 3fr;
         grid-template-rows: 1fr;
         grid-gap: 20px;        
         grid-template-areas: 
@@ -155,7 +201,6 @@ h3{
         .filtres_titre{
             grid-area: txt;
             display: flex;
-            justify-content: center;
         }
 
         #economique{
@@ -307,6 +352,7 @@ h3{
         grid-area: info_recherche;
         display: flex;
         align-items: center;
+        margin-block-start: 2%;
         
     }
 
@@ -338,9 +384,9 @@ h3{
 
 
         display: grid;
-        grid-template-rows: 1fr 3fr 3fr 1fr;
+        grid-template-rows:0.8fr 2fr 2fr 0.5fr;
         grid-template-columns: 20px repeat(3, 2fr) 20px;
-        grid-gap: 20px;
+        grid-gap: 30px;
         grid-template-areas: 
         ". titre titre1 titre2 ."
         ". annonce1 annonce2 annonce3 ."
@@ -350,6 +396,8 @@ h3{
 
         .hebergements_titre{
             grid-area: titre;
+            margin-block-start: 10%;
+            
         }
 
         .hebergements_box1{
@@ -357,9 +405,10 @@ h3{
             border: solid white 6px;
             background-color: white;
             border-radius: 25px;
-            width: 270px;
-            margin-bottom: 25px;
+            width: 320px;
             max-height: 225px;
+            justify-self: center;
+            box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
         }
 
         .hebergements_box2{
@@ -367,9 +416,10 @@ h3{
             border: solid white 6px;
             background-color: white;
             border-radius: 25px;
-            width: 270px;
-            margin-bottom: 25px;
+            width: 320px;
             max-height: 225px;
+            justify-self: center;
+            box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
         }
 
         .hebergements_box3{
@@ -377,9 +427,10 @@ h3{
             border: solid white 6px;
             background-color: white;
             border-radius: 25px;
-            width: 270px;
-            margin-bottom: 25px;
+            width: 320px;
             max-height: 225px;
+            justify-self: center;
+            box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
         }
 
         .hebergements_box4{
@@ -387,9 +438,10 @@ h3{
             border: solid white 6px;
             background-color: white;
             border-radius: 25px;
-            width: 270px;
-            margin-bottom: 25px;
+            width: 320px;
             max-height: 225px;
+            justify-self: center;
+            box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
         }
 
         .hebergements_box5{
@@ -397,9 +449,10 @@ h3{
             border: solid white 6px;
             background-color: white;
             border-radius: 25px;
-            width: 270px;
-            margin-bottom: 25px;
+            width: 320px;
             max-height: 225px;
+            justify-self: center;
+            box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
         }
 
         .hebergements_box6{
@@ -407,14 +460,15 @@ h3{
             border: solid white 6px;
             background-color: white;
             border-radius: 25px;
-            width: 270px;
-            margin-bottom: 25px;
+            width: 320px;
             max-height: 225px;
+            justify-self: center;
+            box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
         }
 
         .hebergements_image
         {
-            width: 270px;
+            width: 320px;
             height: 130px;
             border-top-right-radius: 20px;
             border-top-left-radius: 20px;
@@ -435,19 +489,22 @@ h3{
         .tarif_hebergementsbox{
             margin-left: 10px;
             margin-block-end: 0px;
-            margin-block-start: 5px;
+            margin-block-start: 3%;
             
         }
 
         .hebergements_lien{
             grid-area: afficher;
+            font-size: 20px;
+            
+            font-weight: bold;
         }
 
         .note{
             display: flex;
             margin-left: 10px;
             margin-block-end: 0px;
-            margin-block-start: 5px;
+            margin-block-start: 3%;
         }
 
         .note_bleu{
@@ -466,7 +523,7 @@ h3{
 
 
         display: grid;
-        grid-template-columns: 5px 7fr 5px;
+        grid-template-columns: 10px 7fr 10px;
         grid-template-rows: 5px 1fr 3fr 3fr 3fr;
         grid-gap: 15px;
         grid-template-areas: 
@@ -481,7 +538,12 @@ h3{
             grid-area: populairetitre;
             display: flex;
             justify-content: space-between;
+        }
 
+        .populaires_icon{
+            font-size: 20px;
+            display: flex;
+            align-items: center;
         }
 
         .populaires_box1{
@@ -491,8 +553,9 @@ h3{
             border-radius: 25px;
             display: flex;
             flex-direction: row;
-            max-height: 135px;
-
+            max-height: 150px;
+            width: 380px;
+            box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
         }
 
         .populaires_box2{
@@ -502,7 +565,9 @@ h3{
             border-radius: 25px;
             display: flex;
             flex-direction: row;
-            max-height: 135px;
+            max-height: 150px;
+            width: 380px;
+            box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
         }
 
         .populaires_box3{
@@ -512,12 +577,14 @@ h3{
             border-radius: 25px;
             display: flex;
             flex-direction: row;
-            max-height: 135px;
+            max-height: 150px;
+            width: 380px;
+            box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
         }
 
         .populaires_image{
-            width: 160px;
-            height: 135px;
+            width: 150px;
+            height: 150px;
             border-bottom-left-radius: 20px;
             border-top-left-radius: 20px;
             object-fit: cover;
@@ -525,10 +592,15 @@ h3{
         }
 
         .populaires_box_titre{
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
+            margin-block-end: 0em;
+            margin-inline-start: 5%;
             margin-inline-end: 0px;
             margin-block-start: 0em;
+        }
+        
+        .populaire_texte{
+            margin-block-start: 5%;
+            margin-inline-start: 5%;
         }
 
         .note_populaire{
@@ -536,7 +608,8 @@ h3{
             flex-direction: row;
             
             margin-block-end: 0px;
-            margin-block-start: 5px;
+            margin-block-start: 20%;
+            margin-inline-start: 5%;
         }
 
     /* Activités à Marseille */
@@ -702,34 +775,4 @@ h3{
     }
 
 
-
-
-
-
-
-
-
-
-
-    /* A modifier */
-
-    .logo_reservia{
-        width: 100px;
-    }
-
-
-
-
-
-
-
-
-
-
-.logo_info
-{
-    width: 2%;
-    height: 1%;
-    padding-top: 0.5%;
-}
 
