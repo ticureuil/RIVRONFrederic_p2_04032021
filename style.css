@@ -19,6 +19,10 @@ h3{
     margin-inline-start: 15px;
 }
 
+::placeholder{
+    color: black;
+}
+
 
 /* Header */
 
@@ -120,6 +124,7 @@ h3{
     ". acti acti1 .";
     }    
 
+
         /* Formulaire */
 
     #recherche{
@@ -174,6 +179,7 @@ h3{
             .recherche_input{
                 border: solid #F2F2F2 0.5px;
                 font-weight: bold;
+                padding-left: 1%;
             }
 
 
@@ -391,7 +397,6 @@ h3{
         display: grid;
         grid-template-rows:0.8fr 2fr 2fr 0.5fr;
         grid-template-columns: 20px repeat(3, 2fr) 20px;
-        grid-gap: 30px;
         grid-template-areas: 
         ". titre titre1 titre2 ."
         ". annonce1 annonce2 annonce3 ."
@@ -402,7 +407,7 @@ h3{
         .hebergements_titre{
             grid-area: titre;
             margin-block-start: 10%;
-            
+            margin-inline-start: 5%;
         }
 
         .hebergements_box1{
@@ -501,8 +506,9 @@ h3{
         .hebergements_lien{
             grid-area: afficher;
             font-size: 20px;
-            
             font-weight: bold;
+            margin-inline-start: 5%;
+            margin-top: 3%;
         }
 
         .note{
@@ -528,9 +534,8 @@ h3{
 
 
         display: grid;
-        grid-template-columns: 10px 7fr 10px;
+        grid-template-columns: 30px 7fr 30px;
         grid-template-rows: 5px 1fr 3fr 3fr 3fr;
-        grid-gap: 15px;
         grid-template-areas: 
         ". . ."
         ". populairetitre ."
@@ -625,14 +630,18 @@ h3{
 
         display: grid;
         grid-template-columns:repeat(4,2fr);
-        grid-template-rows: 10px 1fr 3fr 3fr;
-        grid-gap: 40px;
+        grid-column-gap: 40px;
         grid-template-areas:
         ". . . ."
         "activitéstitre . . ."
         "activités1 activités2 activités3 activités4"
         "activités5 activités6 activités7 activités8";
     }
+
+        .activité_titre{
+            grid-area: activitéstitre;
+        }
+
 
         .activité_box1{
             grid-area: activités1 ;
@@ -646,6 +655,7 @@ h3{
             grid-area: activités2;
             border-radius: 35px;
             box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+            margin-block-end: 7%;
         }
 
         .activité_box3{
@@ -667,6 +677,7 @@ h3{
             grid-area: activités4;
             border-radius: 35px;
             box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+            margin-block-end: 7%;
         }
 
         .activité_box6{
