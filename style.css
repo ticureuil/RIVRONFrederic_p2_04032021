@@ -1,14 +1,14 @@
 @font-face {
-    font-family: "raleway", Arial, Helvetica, sans-serif;
+    font-family: "raleway";
     src: url("font/Raleway-VariableFont_wght.ttf");
 }   
 
 body{
     margin: 0%;
-    font-family: raleway;
+    font-family: raleway, Arial, Helvetica, sans-serif;
 }
 
-@media (min-width: 1440px){
+
 
 
     a:link, a:active, a:visited, a:hover
@@ -31,7 +31,7 @@ body{
 
     #titre{
         display: grid;
-        grid-template-columns: 0.7fr 1fr 6fr 2fr 1fr 0.5fr;
+        grid-template-columns: 0.3fr 1fr 6fr 2fr 1fr 0.3fr;
         grid-template-areas: 
         ". logo . nav inscription .";
     }
@@ -117,7 +117,7 @@ body{
     /* Body */
     #body1{
         display: grid;
-        grid-template-columns: 0.5fr 6fr 2fr 0.5fr;;
+        grid-template-columns: 0.2fr 6fr 2fr 0.2fr;;
         grid-gap: 35px;
         grid-template-areas:
         ". recherche recherche1 ." 
@@ -727,19 +727,6 @@ body{
             }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         /* Footer */
         #footer{
             background-color: #F2F2F2 ;
@@ -792,18 +779,30 @@ body{
             grid-area: n;
         }
 
-}
 
 
 
-@media (max-width: 320px){
 
-        
+
+
+
+
+
+
+
+
+
+@media (max-width: 375px){
+
+    
+
+/* Header  (max-width: 375px) */    
     #titre{
         display: grid;
-        grid-template-columns: 0.5fr 1fr 2fr 1fr 0.5fr;
+        grid-template-columns: 1fr 2fr 1fr ;
         grid-template-areas:
-        ". logo . inscription ."
+        " logo . inscription "
+        " nav nav nav ";
     }
 
 
@@ -819,7 +818,7 @@ body{
         }
 
     #barre_nav{
-        grid-area: nav;
+        grid-area: nav /span 4 ;
 
     }
 
@@ -858,14 +857,117 @@ body{
 
             #body1{
                 display: grid;
-                grid-template-columns: 0.5fr 6fr 0.5fr;;
-                grid-gap: 35px;
+                grid-template-columns: 6fr;;
+                grid-gap: 0px;
                 grid-template-areas:
-                ". recherche ." 
-                ". hebergements ."
-                ". populaires ."
-                ". acti .";
+                "recherche" 
+                "populaires"
+                "hebergements"
+                "acti";
             }    
+/* Recherche (max-width: 375px) */
+            #recherche{
+                grid-area: recherche;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 0fr 0fr 0fr 0fr;
+                grid-template-areas: 
+                "titre_recherche"
+                "insert_recherche"
+                "filtres_recherche"
+                "info_recherche";
+            }
+
+                .filtres{
+                    grid-area: filtres_recherche;
+        
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 20px;        
+                    grid-template-areas: 
+                    "txt ."
+                    "eco fami"
+                    "roman ."
+                    "anim .";
+                }
+
+
+
+
+
+
+/* Hebergement (max-width: 375px) */
+            #hebergements{
+                grid-area: hebergements;
+                background-color: white;
+                border-radius: 30px;      
+                display: grid;
+                grid-template-rows:0.8fr repeat(6, 2fr) 0.5fr;
+                grid-row-gap: 20px;
+                grid-template-columns: 20px 2fr 20px;
+                grid-template-areas: 
+                ". titre ."
+                ". annonce1 ."
+                ". annonce2 ."
+                ". annonce3 ."
+                ". annonce4 ."
+                ". annonce5 ."
+                ". annonce6 ."
+                ". afficher .";
+                }
+
+
+/* Activité (max-width: 375px) */
+            #activités{
+                grid-area: acti;
+                display: grid;
+                grid-template-columns: 2fr;
+                grid-column-gap: 40px;
+                grid-template-areas:
+                "activitéstitre"
+                "activités1"
+                "activités2"
+                "activités3"
+                "activités4"
+                "activités5"
+                "activités6"
+                "activités7"
+                "activités8";
+            }
+            .activité_box1{
+                grid-area: activités1 ;
+                border-radius: 35px;
+                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                margin-bottom: 60px;
+            }
+
+            
+            .activité_box4{
+                grid-area: activités3;
+                border-radius: 35px;
+                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                margin-bottom: 60px;
+            }
+
+
+/* Footer (max-width: 375px) */
+            #footer{
+            background-color: #F2F2F2 ;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(10, 1fr);
+            grid-template-areas: 
+            "p"
+            "h"
+            "a"
+            "f"
+            "ch"
+            "ce"
+            "co"
+            "s"
+            "n"
+            "d";
+            }
 
 
     }
