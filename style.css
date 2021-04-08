@@ -185,6 +185,7 @@ body{
 
 
                 .recherche_bouton{
+
                     border: none;
                     border-top-right-radius: 10px;
                     border-bottom-right-radius: 10px;
@@ -192,6 +193,10 @@ body{
                     font-size: 16px;
                     color: white;
                     background-color: #0065FC;
+                }
+
+                .recherche_bouton_icon{
+                    display: none;
                 }
 
 
@@ -896,6 +901,24 @@ body{
 
                 .texte_recherche2{
                     margin-block-start: 0em;
+                }
+
+                .recherche_bouton{
+                    display: none;
+                }
+
+
+                .recherche_bouton_icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    border-radius: 10px;
+                    height: 42px;
+                    width: 13%;
+                    font-size: 16px;
+                    color: white;
+                    background-color: #0065FC;
                 }
 
                 .filtres{
