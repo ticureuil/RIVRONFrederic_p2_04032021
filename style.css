@@ -786,22 +786,8 @@ body{
 
 
 
+@media (max-width: 1440px){
 
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 375px){
-
-    
-
-/* Header  (max-width: 375px) */    
     #titre{
         display: grid;
         padding-top: 20px;
@@ -862,6 +848,267 @@ body{
                 padding-inline-start: 0px;
             }
 
+            .activités:active{
+                display: flex;
+                justify-content: center;
+                grid-area: acti_nav;
+                border-bottom: solid #F2F2F2;
+                padding-bottom: 15px;
+                padding-inline-start: 0px;
+            }
+
+            .ancres_activités:hover, .ancres_activités:active, .ancres_activités:link{
+                border: none;
+                color: black;
+            }
+
+    .inscrire{
+        grid-area: inscription;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        font-weight: 900;
+    }
+
+
+
+
+    #body1{
+        display: grid;
+        grid-template-columns: 6fr;;
+        grid-gap: 0px;
+        row-gap: 15px;
+        grid-template-areas:
+        "recherche"
+        "hebergements"
+        "populaires"
+        "acti";
+    }    
+
+        #recherche{
+            grid-area: recherche;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+            grid-template-areas: 
+            "titre_recherche"
+            "insert_recherche"
+            "filtres_recherche"
+            "info_recherche";
+        }
+
+            .filtres{
+                grid-area: filtres_recherche;
+
+                display: grid;
+                grid-template-columns: 0.3fr 1.1fr 0.8fr 1.2fr 1.3fr ;
+                grid-template-rows: 1fr;
+                grid-gap: 5px;        
+                grid-template-areas: 
+                "txt eco fami roman anim";
+            }
+
+        #hebergements{
+            grid-area: hebergements;
+            background-color: #F2F2F2;
+            border-radius: 30px;
+       
+            display: grid;
+            grid-template-rows:0.5fr 1fr 1fr 1fr 0.5fr;
+            grid-gap: 10px;
+            grid-template-columns: 20px repeat(2, 2fr) 20px;
+            grid-template-areas: 
+                ". titre titre1 ."
+                ". annonce1 annonce2  ."
+                ". annonce3 annonce4 ."
+                ". annonce5 annonce6 ."
+                ". afficher afficher1 .";
+        }
+    
+
+
+
+        #activités{
+            grid-area: acti;
+
+            display: grid;
+            grid-template-columns:repeat(2,2fr);
+            grid-column-gap: 40px;
+            grid-template-areas:
+            ". ."
+            "activitéstitre ."
+            "activités1 activités2"
+            ". activités3"
+            "activités4 activités5"
+            ". activités6";
+        }
+
+            .activité_box1{
+                grid-area: activités1 ;
+                grid-row: activités1 / span 2;
+                border-radius: 35px;
+                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                margin-bottom: 0px;
+            }
+
+            .activité_box2{
+                grid-area: activités2;
+                border-radius: 35px;
+                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                margin-block-end: 7%;
+            }
+
+            .activité_box3{
+                grid-area: activités6;
+                border-radius: 35px;
+                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                margin-bottom: 0px;
+            }
+            
+            .activité_box4{
+                grid-area: activités4;
+                grid-row: activités4 / span 2;
+                border-radius: 35px;
+                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                margin-bottom: 0px;
+            }
+
+            .activité_box5{
+                grid-area: activités3;
+                border-radius: 35px;
+                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                margin-block-end: 7%;
+            }
+
+            .activité_box6{
+                grid-area: activités5;
+                border-radius: 35px;
+                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                margin-bottom: 0px;
+            }
+
+            .activité_image_fort
+            {
+                width: 35%;
+                height: 200px;
+                border-top-right-radius: 35px;
+                border-top-left-radius: 35px;
+                object-fit: cover;
+            }
+
+            .activité_image_dame
+            {
+                width: 35%;
+                height: 200px;
+                border-top-right-radius: 35px;
+                border-top-left-radius: 35px;
+                object-fit: cover;
+            }
+
+            .activité_image_span
+            {
+                width: 35%;
+                height: 430px;
+                border-top-right-radius: 35px;
+                border-top-left-radius: 35px;
+                object-fit: cover;
+            }
+
+            .activité_image
+            {
+                width: 35%;
+                height: 130px;
+                border-top-right-radius: 35px;
+                border-top-left-radius: 35px;
+                object-fit: cover;
+            }
+}
+
+
+
+
+@media (max-width: 425px){
+
+
+
+
+/* Header  (max-width: 425px) */    
+    #titre{
+        display: grid;
+        padding-top: 20px;
+        grid-template-columns: 1fr 2fr 1fr ;
+        grid-template-areas:
+        " logo . inscription "
+        " nav nav nav ";
+    }
+
+
+
+    .logo{
+        grid-area: logo;
+        display: flex;
+        align-items: flex-end;
+        margin-left: 15px;
+    }
+        .logo_reservia{
+            width: 100px;
+        }
+
+    #barre_nav{
+        grid-area: nav /span 4 ;
+
+    }
+
+        .barre_nav{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "heber_nav acti_nav";
+
+            list-style: none;
+            margin-block-start: 5%;
+            padding-inline-start: 0px;
+        }
+
+
+            .hebergements{
+                display: flex;
+                justify-content: center;
+                grid-area: heber_nav;
+                color: #0065FC;
+                border-bottom: solid #0065FC;
+                padding-bottom: 15px;
+                padding-inline-start: 0px;
+            }
+                .ancres_hebergements:link{
+                    border-top: none;
+                }
+
+            .activités{
+                display: flex;
+                justify-content: center;
+                grid-area: acti_nav;
+                border-bottom: solid #F2F2F2;
+                padding-bottom: 15px;
+                padding-inline-start: 0px;
+            }
+
+            .activités:active{
+                display: flex;
+                justify-content: center;
+                grid-area: acti_nav;
+                border-bottom: solid #F2F2F2;
+                padding-bottom: 15px;
+                padding-inline-start: 0px;
+            }
+
+            .ancres_activités:hover, .ancres_activités:active, .ancres_activités:link{
+                border: none;
+                color: black;
+            }
+
     .inscrire{
         grid-area: inscription;
         display: flex;
@@ -885,7 +1132,7 @@ body{
                 "hebergements"
                 "acti";
             }    
-/* Recherche (max-width: 375px) */
+/* Recherche (max-width: 425px) */
             #recherche{
                 grid-area: recherche;
                 display: grid;
@@ -903,12 +1150,20 @@ body{
                     margin-block-start: 0em;
                 }
 
+                .recherche_input{
+                    margin-right: -15px;
+                }
+
                 .recherche_bouton{
                     display: none;
                 }
 
+                .recherche_icon_recherche{
+                    color: white;
+                    font-size: 14px;
+                }
 
-                .recherche_bouton_icon{
+                .recherche_bouton_icon, .recherche_bouton_icon:link,  .recherche_bouton_icon:active, .recherche_bouton_icon:visited{
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -958,7 +1213,7 @@ body{
                     margin-inline-start: 15px;
                 }
 
-/* Les plus populaires (max-width: 375px)*/
+/* Les plus populaires (max-width: 425px)*/
         #populaires{
             grid-area: populaires;
             background-color: #F2F2F2;
@@ -999,7 +1254,7 @@ body{
 
 
 
-/* Hebergement (max-width: 375px) */
+/* Hebergement (max-width: 425px) */
             #hebergements{
                 grid-area: hebergements;
                 background-color: white;
@@ -1020,7 +1275,7 @@ body{
                 }
 
 
-/* Activité (max-width: 375px) */
+/* Activité (max-width: 425px) */
             #activités{
                 grid-area: acti;
                 display: grid;
@@ -1082,7 +1337,7 @@ body{
             }
 
 
-/* Footer (max-width: 375px) */
+/* Footer (max-width: 425px) */
             #footer{
             background-color: #F2F2F2 ;
             padding-bottom: 15px;
@@ -1107,3 +1362,6 @@ body{
             }
             
     }
+
+
+
