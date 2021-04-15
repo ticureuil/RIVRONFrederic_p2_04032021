@@ -3,9 +3,23 @@
     src: url("font/Raleway-VariableFont_wght.ttf");
 }   
 
+@font-face 
+{
+	font-family: "Raleway";
+	src: url('font/Raleway-Regular.ttf');
+}
+
+@font-face 
+{
+	font-family: "Raleway";
+	font-weight: bold;
+	src: url('font/Raleway-Bold.ttf');
+}
+
+
 body{
     margin: 0%;
-    font-family: raleway, Arial, Helvetica, sans-serif;
+    font-family: "raleway", Arial, Helvetica, sans-serif;
 }
 
 
@@ -424,7 +438,7 @@ body{
                 width: 320px;
                 max-height: 225px;
                 justify-self: center;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
             }
 
             .hebergements_box2{
@@ -435,7 +449,7 @@ body{
                 width: 320px;
                 max-height: 225px;
                 justify-self: center;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
             }
 
             .hebergements_box3{
@@ -446,7 +460,7 @@ body{
                 width: 320px;
                 max-height: 225px;
                 justify-self: center;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
             }
 
             .hebergements_box4{
@@ -457,7 +471,7 @@ body{
                 width: 320px;
                 max-height: 225px;
                 justify-self: center;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
             }
 
             .hebergements_box5{
@@ -468,7 +482,7 @@ body{
                 width: 320px;
                 max-height: 225px;
                 justify-self: center;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
             }
 
             .hebergements_box6{
@@ -479,7 +493,7 @@ body{
                 width: 320px;
                 max-height: 225px;
                 justify-self: center;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
             }
 
             .hebergements_image
@@ -583,7 +597,7 @@ body{
                 flex-direction: row;
                 max-height: 150px;
                 width: 380px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
             }
 
             .populaires_box3{
@@ -595,7 +609,7 @@ body{
                 flex-direction: row;
                 max-height: 150px;
                 width: 380px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
             }
 
             .populaires_image{
@@ -654,21 +668,21 @@ body{
                 grid-area: activités1 ;
                 grid-row: 3 / span 2;
                 border-radius: 35px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 60px;
             }
 
             .activité_box2{
                 grid-area: activités2;
                 border-radius: 35px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-block-end: 7%;
             }
 
             .activité_box3{
                 grid-area: activités6;
                 border-radius: 35px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 60px;
             }
 
@@ -676,21 +690,21 @@ body{
                 grid-area: activités3;
                 grid-row: 3 / span 2;
                 border-radius: 35px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 60px;
             }
 
             .activité_box5{
                 grid-area: activités4;
                 border-radius: 35px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-block-end: 7%;
             }
 
             .activité_box6{
                 grid-area: activités8;
                 border-radius: 35px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 60px;
             }
 
@@ -951,6 +965,7 @@ body{
             max-height: 150px;
             margin-bottom: 30px;
             margin-top: -10px;
+            justify-self: center;
         }
 
         .populaires_image{
@@ -978,21 +993,21 @@ body{
                 grid-area: activités1 ;
                 grid-row: activités1 / span 2;
                 border-radius: 35px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 25px;
             }
 
             .activité_box2{
                 grid-area: activités2;
                 border-radius: 35px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-block-end: 7%;
             }
 
             .activité_box3{
                 grid-area: activités6;
                 border-radius: 35px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 0px;
                 margin-block-end: 7%;
             }
@@ -1001,7 +1016,7 @@ body{
                 grid-area: activités4;
                 grid-row: activités4 / span 2;
                 border-radius: 35px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 0px;
                 margin-block-end: 7%;
             }
@@ -1009,7 +1024,7 @@ body{
             .activité_box5{
                 grid-area: activités3;
                 border-radius: 35px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-block-end: 7%;
                 margin-block-end: 7%;
             }
@@ -1017,7 +1032,7 @@ body{
             .activité_box6{
                 grid-area: activités5;
                 border-radius: 35px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 0px;
                 margin-block-end: 7%;
             }
@@ -1343,7 +1358,7 @@ body{
             .activité_box1{
                 grid-area: activités1 ;
                 border-radius: 35px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 15px;
             }
 
@@ -1360,7 +1375,7 @@ body{
             .activité_box4{
                 grid-area: activités4;
                 border-radius: 35px;
-                box-shadow: 1px 1px 1px 1px rgb(221, 221, 221);
+                box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 15px;
             }
 
