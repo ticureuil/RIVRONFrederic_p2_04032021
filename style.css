@@ -41,12 +41,12 @@ body{
 
 
     /* Header */
-
-
     #titre{
         display: grid;
         grid-template-columns: 0.3fr 1fr 6fr 2fr 1fr 0.3fr;
+        grid-template-rows: 0.5fr 1fr;
         grid-template-areas: 
+        ". . . . . ."
         ". logo . nav inscription .";
     }
 
@@ -83,6 +83,7 @@ body{
                 display: flex;
                 justify-content: center;
                 grid-area: heber_nav;
+                grid-row: span 1;
             }
 
             .activités{
@@ -106,14 +107,14 @@ body{
         
         color: #0065FC;
         border-top: solid #0065FC;
-        padding-top: 15px;
+        padding-top: 41px;
     }
 
 
     .ancres_activités:hover{
         color: #0065FC;
         border-top: solid #0065FC;
-        padding-top: 15px;
+        padding-top: 41px;
     }
 
 
@@ -123,13 +124,14 @@ body{
     .ancres_inscrire:hover{
         color: #0065FC;
         border-top: solid #0065FC;
-        padding-top: 15px;
+        padding-top: 41px;
     }
 
 
 
     /* Body */
     #body1{
+        margin-top: 20px;
         display: grid;
         grid-template-columns: 0.2fr 6fr 2fr 0.2fr;;
         grid-gap: 35px;
@@ -195,6 +197,7 @@ body{
                     border: solid #F2F2F2 0.5px;
                     font-weight: bold;
                     padding-left: 1%;
+                    width: 215px;
                 }
 
 
@@ -240,7 +243,7 @@ body{
                 "logo_eco txt_eco";
 
                 border: solid#F2F2F2 2px;
-                border-radius: 40px;
+                border-radius: 30px;
                 
             }
 
@@ -275,7 +278,7 @@ body{
                 "logo_fami txt_fami";
 
                 border: solid #F2F2F2 2px;
-                border-radius: 40px;
+                border-radius: 30px;
                 
             }
 
@@ -307,7 +310,7 @@ body{
                 "logo_rom txt_rom";
 
                 border: solid #F2F2F2 2px;
-                border-radius: 40px;
+                border-radius: 30px;
                 
             }
 
@@ -339,7 +342,7 @@ body{
                 "logo_ani txt_ani";
 
                 border: solid #F2F2F2 2px;
-                border-radius: 40px;
+                border-radius: 30px;
                 
             }
 
@@ -413,10 +416,10 @@ body{
             background-color: #F2F2F2;
             border-radius: 30px;
 
-
             display: grid;
             grid-template-rows:0.8fr 2fr 2fr 0.5fr;
             grid-template-columns: 20px repeat(3, 2fr) 20px;
+            grid-row-gap: 15px;
             grid-template-areas: 
             ". titre titre1 titre2 ."
             ". annonce1 annonce2 annonce3 ."
@@ -434,7 +437,7 @@ body{
                 grid-area: annonce1;
                 border: solid white 6px;
                 background-color: white;
-                border-radius: 25px;
+                border-radius: 30px;
                 width: 320px;
                 max-height: 225px;
                 justify-self: center;
@@ -445,7 +448,7 @@ body{
                 grid-area: annonce2;
                 border: solid white 6px;
                 background-color: white;
-                border-radius: 25px;
+                border-radius: 30px;
                 width: 320px;
                 max-height: 225px;
                 justify-self: center;
@@ -456,7 +459,7 @@ body{
                 grid-area: annonce3;
                 border: solid white 6px;
                 background-color: white;
-                border-radius: 25px;
+                border-radius: 30px;
                 width: 320px;
                 max-height: 225px;
                 justify-self: center;
@@ -467,7 +470,7 @@ body{
                 grid-area: annonce4;
                 border: solid white 6px;
                 background-color: white;
-                border-radius: 25px;
+                border-radius: 30px;
                 width: 320px;
                 max-height: 225px;
                 justify-self: center;
@@ -478,7 +481,7 @@ body{
                 grid-area: annonce5;
                 border: solid white 6px;
                 background-color: white;
-                border-radius: 25px;
+                border-radius: 30px;
                 width: 320px;
                 max-height: 225px;
                 justify-self: center;
@@ -489,7 +492,7 @@ body{
                 grid-area: annonce6;
                 border: solid white 6px;
                 background-color: white;
-                border-radius: 25px;
+                border-radius: 30px;
                 width: 320px;
                 max-height: 225px;
                 justify-self: center;
@@ -555,7 +558,7 @@ body{
 
             display: grid;
             grid-template-columns: 30px 7fr 30px;
-            grid-template-rows: 5px 1fr 3fr 3fr 3fr;
+            grid-template-rows: 30px 0.2fr 1fr 1fr 1fr 10px;
             grid-template-areas: 
             ". . ."
             ". populairetitre ."
@@ -580,7 +583,7 @@ body{
                 grid-area: populaire1;
                 border: solid white 6px;
                 background-color: white;
-                border-radius: 25px;
+                border-radius: 30px;
                 display: flex;
                 flex-direction: row;
                 max-height: 150px;
@@ -592,7 +595,7 @@ body{
                 grid-area: populaire2;
                 border: solid white 6px;
                 background-color: white;
-                border-radius: 25px;
+                border-radius: 30px;
                 display: flex;
                 flex-direction: row;
                 max-height: 150px;
@@ -604,7 +607,7 @@ body{
                 grid-area: populaire3;
                 border: solid white 6px;
                 background-color: white;
-                border-radius: 25px;
+                border-radius: 30px;
                 display: flex;
                 flex-direction: row;
                 max-height: 150px;
@@ -667,21 +670,21 @@ body{
             .activité_box1{
                 grid-area: activités1 ;
                 grid-row: 3 / span 2;
-                border-radius: 35px;
+                border-radius: 30px;
                 box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 60px;
             }
 
             .activité_box2{
                 grid-area: activités2;
-                border-radius: 35px;
+                border-radius: 30px;
                 box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-block-end: 7%;
             }
 
             .activité_box3{
                 grid-area: activités6;
-                border-radius: 35px;
+                border-radius: 30px;
                 box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 60px;
             }
@@ -689,21 +692,21 @@ body{
             .activité_box4{
                 grid-area: activités3;
                 grid-row: 3 / span 2;
-                border-radius: 35px;
+                border-radius: 30px;
                 box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 60px;
             }
 
             .activité_box5{
                 grid-area: activités4;
-                border-radius: 35px;
+                border-radius: 30px;
                 box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-block-end: 7%;
             }
 
             .activité_box6{
                 grid-area: activités8;
-                border-radius: 35px;
+                border-radius: 30px;
                 box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 60px;
             }
@@ -800,7 +803,7 @@ body{
 
 
 
-@media (max-width: 1024px){
+@media (max-width: 1440px){
 
     #titre{
         display: grid;
@@ -895,8 +898,8 @@ body{
         row-gap: 15px;
         grid-template-areas:
         "recherche"
-        "hebergements"
         "populaires"
+        "hebergements"
         "acti";
     }    
 
@@ -926,7 +929,7 @@ body{
 
         #hebergements{
             grid-area: hebergements;
-            background-color: #F2F2F2;
+            background-color: white;
             border-radius: 30px;
        
             display: grid;
@@ -992,21 +995,21 @@ body{
             .activité_box1{
                 grid-area: activités1 ;
                 grid-row: activités1 / span 2;
-                border-radius: 35px;
+                border-radius: 30px;
                 box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 25px;
             }
 
             .activité_box2{
                 grid-area: activités2;
-                border-radius: 35px;
+                border-radius: 30px;
                 box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-block-end: 7%;
             }
 
             .activité_box3{
                 grid-area: activités6;
-                border-radius: 35px;
+                border-radius: 30px;
                 box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 0px;
                 margin-block-end: 7%;
@@ -1015,7 +1018,7 @@ body{
             .activité_box4{
                 grid-area: activités4;
                 grid-row: activités4 / span 2;
-                border-radius: 35px;
+                border-radius: 30px;
                 box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 0px;
                 margin-block-end: 7%;
@@ -1023,7 +1026,7 @@ body{
 
             .activité_box5{
                 grid-area: activités3;
-                border-radius: 35px;
+                border-radius: 30px;
                 box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-block-end: 7%;
                 margin-block-end: 7%;
@@ -1031,7 +1034,7 @@ body{
 
             .activité_box6{
                 grid-area: activités5;
-                border-radius: 35px;
+                border-radius: 30px;
                 box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 0px;
                 margin-block-end: 7%;
@@ -1092,9 +1095,7 @@ body{
 
 
 
-
-
-@media (max-width: 425px){
+@media (max-width: 767px){
 
 
 
@@ -1357,7 +1358,7 @@ body{
             }
             .activité_box1{
                 grid-area: activités1 ;
-                border-radius: 35px;
+                border-radius: 30px;
                 box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 15px;
             }
@@ -1374,7 +1375,7 @@ body{
             
             .activité_box4{
                 grid-area: activités4;
-                border-radius: 35px;
+                border-radius: 30px;
                 box-shadow: 0px 5px 10px 0pc rgb(242 242 242);
                 margin-bottom: 15px;
             }
