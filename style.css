@@ -422,7 +422,8 @@ body{
             display: grid;
             grid-template-rows:0.8fr 2fr 2fr 0.5fr;
             grid-template-columns: 20px repeat(3, 2fr) 20px;
-            grid-row-gap: 15px;
+            grid-gap: 15px;
+            grid-column-gap: 20px;
             grid-template-areas: 
             ". titre titre1 titre2 ."
             ". annonce1 annonce2 annonce3 ."
