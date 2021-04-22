@@ -165,9 +165,7 @@ body{
             grid-area: titre_recherche; 
         }
 
-        .texte_recherche2{
-            margin-block-start: -1em;
-        }
+        
 
 
 
@@ -224,7 +222,7 @@ body{
             grid-area: filtres_recherche;
 
             display: grid;
-            grid-template-columns: 0.3fr 0.7fr 0.7fr 0.8fr 0.8fr 3fr;
+            grid-template-columns: 0.3fr 0.7fr 0.7fr 0.8fr 1.2fr 3fr;
             grid-template-rows: 1fr;
             grid-gap: 20px;        
             grid-template-areas: 
@@ -576,7 +574,8 @@ body{
                 grid-area: populairetitre;
                 display: flex;
                 justify-content: space-between;
-                margin-top: 13px;
+                margin-top: -9px;
+        
             }
 
             .populaires_icon{
@@ -949,6 +948,9 @@ body{
                 ". annonce5 annonce6 ."
                 ". afficher afficher1 .";
         }
+            .hebergements_box1, .hebergements_box2, .hebergements_box3, .hebergements_box4, .hebergements_box5, .hebergements_box6{
+                width: 80%;
+            }
     
 
         #populaires{
