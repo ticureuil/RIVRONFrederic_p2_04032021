@@ -571,6 +571,7 @@ body{
                 grid-area: populairetitre;
                 display: flex;
                 justify-content: space-between;
+                margin-top: 13px;
             }
 
             .populaires_icon{
@@ -803,7 +804,7 @@ body{
 
 
 
-@media (max-width: 1440px){
+@media (max-width: 1200px){
 
     #titre{
         display: grid;
