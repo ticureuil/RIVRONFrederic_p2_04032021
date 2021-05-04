@@ -110,14 +110,14 @@ body{
         
         color: #0065FC;
         border-top: solid #0065FC;
-        padding-top: 41px;
+        padding-top: 35px;
     }
 
 
     .ancres_activités:hover{
         color: #0065FC;
         border-top: solid #0065FC;
-        padding-top: 41px;
+        padding-top: 35px;
     }
 
 
@@ -127,7 +127,7 @@ body{
     .ancres_inscrire:hover{
         color: #0065FC;
         border-top: solid #0065FC;
-        padding-top: 41px;
+        padding-top: 35px;
     }
 
 
@@ -583,7 +583,7 @@ body{
             .populaires_icon{
                 font-size: 20px;
                 display: flex;
-                align-items: center;
+                padding-top: 13px;
             }
 
             .populaires_box1{
