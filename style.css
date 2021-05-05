@@ -29,9 +29,6 @@ body{
     font-family: "raleway", Arial, Helvetica, sans-serif;
 }
 
-
-
-
     a:link, a:active, a:visited, a:hover
     { 
         text-decoration:none; 
@@ -39,14 +36,10 @@ body{
         cursor:  pointer;
     } 
 
-    h3{
-        margin-inline-start: 15px;
-    }
 
     ::placeholder{
         color: black;
     }
-
 
     /* Header */
     #titre{
@@ -57,8 +50,6 @@ body{
         ". . . . . ."
         ". logo . nav inscription .";
     }
-
-
 
     .logo{
         grid-area: logo;
@@ -779,6 +770,12 @@ body{
                 border-top-left-radius: 35px;
                 object-fit: cover;
             }
+
+            .activité_box_texte{
+                margin-inline-start: 15px;
+                font-size: 15px;
+            }
+        
 
 
         /* Footer */
